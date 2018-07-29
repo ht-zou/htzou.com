@@ -1,0 +1,135 @@
+/*FOR ALL PAGES*/
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    background: azure;
+}
+
+body {
+    background: azure;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: dimgray;
+}
+
+#line {
+    border-bottom: 1px solid grey;
+}
+
+/*MY PERSONAL WEBSITE MAIN PAGE*/
+.Mainpage-Header {
+    font-size: 50px;
+    margin: 100px 0px 50px 50px;
+}
+
+.MainNavBar {
+    text-align: right;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.MainNavBar a {
+    margin-left: 20px;
+    padding: 2px;
+    text-decoration: none;
+    color: gray;
+
+}
+
+.MainNavBar a:hover {
+    font-weight: bold;
+    border: 2px solid red;
+}
+
+.propg {
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.timeUpdate {
+    font-size: 80%; 
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+}
+
+/*ABOUT ME*/
+#AMheader{
+    margin-left: 50px;
+    font-size: 20px;
+    margin: 40px;
+    margin-top: 60px; 
+}
+
+.AMflex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.AMflex-container #AMpoint {
+    width: 40%;
+    padding: 20px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.AMflex-container dt {
+    font-weight: bold;
+}
+
+
+/*JOURNALS*/
+
+#JournalNavBar #NavBarTitle {
+    font-size: 22px;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin: 0;
+}
+#JournalNavBar ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 10px;
+}
+
+#JournalNavBar ul li {
+    margin: 3px;
+    font-size: 18px;
+}
+
+#JournalNavBar ul a {
+    color: dimgray;
+}
+
+#JournalNavBar a:hover {
+    font-weight: bold;
+    color: darkolivegreen;
+}
+
+#JournalNavBar {
+    width: 20%;
+    float: left;
+    font-size: 16px;
+}
+
+#JournalContent {
+    width: 80%;
+    float: left;
+    font-size: 14px;
+}
+
+/*RESPONSIVE DESIGN*/
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
