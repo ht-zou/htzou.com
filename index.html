@@ -1,29 +1,56 @@
 <!doctype HTML>
 <html>
 <head>
-    <title>My Personal Website</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <title>My Personal Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
 </head>
 <body>
-    <header class="Mainpage-Header">Haitian Zou</header>
-    
-    <div class="MainNavBar">
-    <a href="about.html" target="_blank">About Me</a>
-    <a href="" target="_blank">Life</a>
-    <a href="food.html" target="_blank">Food</a>
-    <a href="" target="_blank">Travel Log</a>
-    <a href="journals.html" target="_blank">Journals</a>
+  <div id="navBar">
+    <header class="myName"><a href="index.html">Haitian Zou</a></header>
+    <div class="navBarContent">
+      <a href="about.html">ABOUT</a>
+      <div class="dropdown">
+        <button class="dropbtn">WORK</button>
+        <div class="dropdown-content">
+          <a href="work.html">FRONT END</a>
+          <a href="work.html">STATISTICS</a>
+        </div>
+      </div>
+      <a href="travellog.html">TRAVEL LOG</a>
+      <a href="photography.html">PHOTOGRAPHY</a>
+      <div class="dropdown">
+        <button class="dropbtn">JOURNALS</button>
+        <div class="dropdown-content">
+          <a href="learning-journals.html">LEARNING</a>
+          <a href="learning-journals.html">LIFE</a>
+        </div>
+      </div>
     </div>
-    
-    <div id="line"></div>
-    
-    <h2 class="propg">
-        <div>I tend to be a quiet person</div>
-        <div>and enjoy my life.</div>
-    </h2>
-    
-    <p class="timeUpdate">Last updated: July 27th, 2018</p>
-    
+  </div>
+
+  <div id="indexContainer">
+    <div id="selfie">
+      <img src="images/selfie2.jpeg" height="200px" width="200px" title="selfie">
+    </div>
+
+    <div class="propg">
+      Hi, I'm Haitian.<br><br><a href="https://www.bayarea.com/" target="_blank">Bay Area</a> via <a href="https://www.hellobc.com/places-to-go/vancouver/" target="_blank">Vancouver</a>, and <a href="https://www.travelchinaguide.com/cityguides/jiangsu/wuxi/" target="_blank">Wuxi</a>.<br><br>I tend to be a quiet person and enjoy my life.<br><br>As a student from <a href="https://www.ubc.ca/" target="_blank">University of British Columbia</a> majoring in Statistics, I have a special interest in <a href="https://en.wikipedia.org/wiki/Front-end_web_development" target="_blank">front end</a> development.
+    </div>
+  </div>
+
+  <div class="footer-container">
+    <div id="contactIcon">
+      <a href="https://www.facebook.com/zoe.zou.568" title="facebook"><img src="/images/icons/451456-24.png"></a> 
+      <a href="about.html" title="email"><img src="/images/icons/451368-24.png"></a>
+      <a href="about.html" title="contact"><img src="/images/icons/451377-24.png"></a> 
+      <a href="about.html" title="surprise"><img src="/images/icons/451361-24.png"></a> 
+      
+    </div>
+    <div>all work © Haitian Zou 2018 • all rights reserved</div>
+  </div>
+
 </body>
 </html>

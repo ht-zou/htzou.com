@@ -1,135 +1,377 @@
 /*FOR ALL PAGES*/
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
 * {
-    box-sizing: border-box;
-    text-decoration: none;
-    background: azure;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
-    background: azure;
-    text-decoration: none;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: dimgray;
+  text-decoration: none;
+  color: dimgray;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 #line {
-    border-bottom: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-container {
+  width: 100%;
+  float: left;
+  font-size: 80%; 
+  font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+  height: 70px;
+}
+
+.footer-container img {
+  border-radius: 50%;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#navBar {
+  text-align: center;
+  height: 200px;
+}
+.myName {
+  font-size: 40px;
+  margin: 50px;
+}
+
+.navBarContent {
+  display: table;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  overflow: hidden;
+}
+
+.navBarContent a {
+  float: left;
+  padding: 0;
+  margin: 0px 25px;
+  color: dimgray;
+  text-align: center;
+  font-size: 16px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  margin: 0px 25px;
+  font-family: inherit;
+  color: dimgray;
+  font-size: 16px;
+  padding: 0;
+}
+
+.navBarContent a:hover, .dropdown:hover .dropbtn{
+  font-weight: bold;
+  border-bottom: 2px solid #E5CBCB;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: dimgray;
+  padding: 6px 0px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  font-weight: bold;
+  color: #ddaaaa;
+  border-bottom: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /*MY PERSONAL WEBSITE MAIN PAGE*/
-.Mainpage-Header {
-    font-size: 50px;
-    margin: 100px 0px 50px 50px;
+
+#indexContainer {
+  margin: 20px 80px 0px 80px;
+  align-self: center; 
 }
 
-.MainNavBar {
-    text-align: right;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-}
-
-.MainNavBar a {
-    margin-left: 20px;
-    padding: 2px;
-    text-decoration: none;
-    color: gray;
+#selfie {
+  float: left;
+  width: 30%;
+  text-align: center;
 
 }
-
-.MainNavBar a:hover {
-    font-weight: bold;
-    border: 2px solid red;
+#selfie img {
+  border-radius: 20px;
 }
 
 .propg {
-    font-size: 24px;
-    font-weight: lighter;
-    line-height: 35px;
-    text-align: center;
-    margin-top: 50px;
-    width: 100%;
+  height: 300px;
+  font-size: 16px;
+  font-weight: lighter;
+  float: left;
+  width: 70%;  
+  padding-left: 20px;
 }
 
-.timeUpdate {
-    font-size: 80%; 
-    font-style: italic;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    bottom: 50px;
+.propg a {
+  color: #DEA9A9;
 }
 
 /*ABOUT ME*/
+
+/*
 #AMheader{
-    margin-left: 50px;
-    font-size: 20px;
-    margin: 40px;
-    margin-top: 60px; 
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
 }
+*/
 
 .AMflex-container {
-    display: flex;
-    flex-wrap: wrap;
+  text-align: center;
+  line-height: 22px;
+}
+
+.AMflex-container a:hover {
+  color: #DEA9A9;
 }
 
 .AMflex-container #AMpoint {
-    width: 40%;
-    padding: 20px;
-    padding-left: 50px;
-    padding-top: 50px;
+  padding-top: 40px;
+}
+
+.AMflex-container #AMpoint:nth-child(1) {
+  padding-top: 0;
 }
 
 .AMflex-container dt {
-    font-weight: bold;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
+.AMflex-container dt:hover {
+  text-decoration: underline;
+  color: #DEA9A9;
+}
 
 /*JOURNALS*/
 
+#JournalNavBar {
+  text-align: center;
+}
+
 #JournalNavBar #NavBarTitle {
-    font-size: 22px;
-    padding-left: 10px;
-    padding-top: 20px;
-    margin: 0;
+  font-size: 22px;
+  padding-left: 10px;
+  padding-top: 12px;
+  margin: 0;
 }
 #JournalNavBar ul {
-    list-style-type: none;
-    padding: 0;
-    padding-left: 10px;
+  list-style-type: none;
+  padding: 0;
+  padding-left: 10px;
 }
 
 #JournalNavBar ul li {
-    margin: 3px;
-    font-size: 18px;
+  margin: 3px;
+  font-size: 18px;
 }
 
 #JournalNavBar ul a {
-    color: dimgray;
+  color: dimgray;
 }
 
 #JournalNavBar a:hover {
-    font-weight: bold;
-    color: darkolivegreen;
+  font-weight: bold;
+  color: darkolivegreen;
 }
 
 #JournalNavBar {
-    width: 20%;
-    float: left;
-    font-size: 16px;
+  width: 20%;
+  float: left;
+  font-size: 16px;
 }
 
 #JournalContent {
-    width: 80%;
-    float: left;
-    font-size: 14px;
+  width: 80%;
+  float: left;
+  font-size: 14px;
 }
+
+/*PHOTOGRAPHY*/
+
+div.gallery {
+  padding: 5px 15px 5px 15px;
+  float: left;
+  width: 33.3333333%;
+  overflow: hidden;
+  text-align: center;
+}
+
+div.gallery img {
+  border: 1px solid #ccc;
+  width: 400px;
+  height: 225px;
+  object-fit: cover;
+}
+
+div.gallery img:hover {
+  border: 1px solid #777;
+}
+
+/*TRAVEL LOG*/
+iframe {
+  width: 740px; 
+  height: 440px;
+  display: block;
+  margin: auto;
+  margin-top: 10px; 
+}
+
+#map {
+  overflow:auto;
+}
+
 
 /*RESPONSIVE DESIGN*/
 @media (min-width: 1200px) {
 
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  div.gallery {
+    width: 49.9999999%;
+  }   
+  div.gallery img {
+    width: 500px;
+    height: 280px;
+  }
+  body {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
 }
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  div.gallery {
+      width: 49.99999%;
+  }     
+  div.gallery img {
+    width: 400px;
+    height: 224px;
+  }
+  body {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #indexContainer {
+    margin: 20px 30px 0px 30px;
+  }   
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  div.gallery {
+    width: 100%;
+  }
+  div.gallery img {
+    width: 500px;
+    height: 280px;
+  }
+  body {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+   #selfie {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+  #selfie img {
+    border-radius: 50%;
+  }
+  .propg {
+    font-size: 16px;
+    font-weight: lighter;
+    float: left;
+    width: 100%;   
+  }
+  #indexContainer {
+    margin: 10px 40px 0px 40px;
+  }   
+  #JournalNavBar {
+    width: 100%;
+  }
+  #JournalContent {
+    width: 100%;
+  }
+  iframe {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.gallery {
+    width: 100%;
+  }
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #selfie {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+  }
+  #selfie img {
+    border-radius: 50%;
+  }
+  .propg {
+    font-size: 16px;
+    font-weight: lighter;
+    float: left;
+    width: 100%;   
+  }
+  #indexContainer {
+    margin: 10px 20px 0px 20px;
+  }
+  #JournalNavBar {
+    width: 100%;
+  }
+  #JournalContent {
+    width: 100%;
+  }
+  iframe {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+#b49797
+ddaaaa
